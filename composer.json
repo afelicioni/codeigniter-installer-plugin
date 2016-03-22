@@ -1,10 +1,16 @@
 {
-    "name": "afelicioni/codeigniter-installer-plugin",
-    "type": "composer-plugin",
-    "require": {
-        "composer-plugin-api": "^1.0"
-    },
-    "extra": {
-        "class": "AFelicioni\\CodeigniterInstallerPlugin"
-    }
+	"name": "afelicioni/codeigniter-installer-plugin",
+	"type": "composer-plugin",
+	"require": {
+		"composer-plugin-api": "^1.0"
+	},
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"AFelicioni\\": ""
+		}
+	},
+	"extra": {
+		"class": "AFelicioni\\CodeigniterInstallerPlugin"
+	}
 }
